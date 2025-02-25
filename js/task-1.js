@@ -6,9 +6,7 @@
 // Усі слова slug повинні бути розділені тире.
 
 function slugify(title) {
-  const slug = title.toLowerCase();
-  const slugSplit = slug.split(' ');
-  return slugSplit.join('-');
+  return title.toLowerCase().split(' ').join('-');
 }
 
 console.log(slugify('Arrays for beginners')); // "arrays-for-beginners"
